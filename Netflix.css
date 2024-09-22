@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    padding: 1rem ;
+    position: relative;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem ;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: 3rem;
+}
+
+.lang-login {
+    width: 21%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lang-login button {
+    display: flex;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 0.25rem;
+    font-size: medium;
+    padding: 0.15rem 0.25rem 0.15rem  0.25rem ;  
+}
+
+.lang i {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(245, 245, 245, 0.893);
+    
+}
+
+i select {
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    border: none;
+    display: flex; 
+    font-size: 1.2rem;
+    color: rgba(245, 245, 245, 0.893);
+}
+
+
+.English {
+    border: none;
+    background: black;
+    color: white;
+
+}
+
+.Hindi {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#sign-in {
+    background-color: red;
+    font-size: 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: rgba(245, 245, 245, 0.893);
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sign-in:hover {
+    background-color: rgba(255, 0, 0, 0.825);
+    
+}
+
+/* Welcome note */
+
+.header .welcomenote {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomenote h1 {
+    width: 620px;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.second-note {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.third-note {
+    padding-bottom: 0.35rem;
+    text-align: center;
+}
+
+.email-box {
+    padding-top: 1rem; 
+    text-align: center;
+    
+}
+
+.email-box input[type=email] {
+    width: 380px;
+    height: 50px;
+    border: 2px solid rgb(129, 129, 129);
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    
+}
+
+
+.email-box input[type=email]::placeholder {
+    color: rgb(233, 226, 226);
+    padding: 1rem;
+}
+
+
+.email-box button {
+    height: 50px;
+    width: 180px;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    margin-left: 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.email-box button:hover {
+    opacity: 90%;
+}
+
+
+
+
+/* Second background image  */
+
+.background2 {
+    background-image: url(images/background2.png);
+    width: 100%;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 5rem;
+    opacity: 50%;
+}
+
+.main {
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    background-color: #060a17;
+   
+}
+
+/* Heading 1 */
+
+.heading1 h3 {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    font-size: 2rem;
+    padding: 0 0 0 4rem;
+    
+}
+
+/* card */
+
+.card-box {
+    
+    width: 100%;
+    height: auto;
+    padding: 1rem 5rem 1rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+
+.card-box .card {
+    width: 180px;
+    height: 252px;
+    padding: 6.444px 22px 6.444px 22px;
+    cursor: pointer;
+   
+}
+
+.card-box .card  img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.card-box .card  img:hover {
+    box-shadow: 10px 10px 30px rgb(100, 25, 25);
+}
+
+
+/* Heading 2 */
+
+.heading2 {
+    padding: 4rem 0 0 4rem;
+    font-size: 2rem;
+}
+
+.main .card-box2 {
+    width: 100%;
+    height: auto;
+    padding: 1rem 5rem 1rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #060a17;
+}
+
+.card-box2 .reason {
+    width: 350px;
+    height: 350px;
+    margin: 1rem ;
+    background-color:#d81f259f;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.card-box2 .reason .reason-details {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    opacity: 90%;
+}
+
+.card-box2 .reason img {
+   height: 20%;
+   position: relative;
+   left: 12rem;
+   
+}
+
+.heading3 {
+    padding: 4rem 0 0 4rem;
+    font-size: 2rem;
+    background-color: #060a17;
+}
+
+
+.main .Questions-box {
+    width: 100%;
+    height: auto;
+    padding: 1rem 5rem 10rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #060a17;
+    cursor: pointer;
+}
+
+.main .Questions-box .Questions1 i {
+    position: absolute;
+    left:109rem;
+    padding-top: 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+   
+}
+
+.Questions-box .question {
+    width: 100%;
+    background-color: #d81f258d;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.Questions-box .question:hover {
+    background-color: #61181a8d;
+   
+}
+
+.Questions1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    text-align: start;
+    cursor: pointer;
+    
+
+}
+
+.btn_one p {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+input[type=checkbox] {
+    display: flex;
+    position: relative;
+    height: 3rem;
+    left: 51rem;
+    top: -15px;
+    width: 100%;
+    opacity: 0%;
+    
+}
+
+#icon_button {
+    position: relative;
+    left: 96%;
+    top: -20px;
+    
+}
+    
+#open:checked ~ .btn_one  {
+    display: none;
+}
+/* footer */
+
+.footer {
+    background-color: #060a17;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+}
+.footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#email-box-two input[type=email] {
+    width: 40rem ;
+}
+
+.call {
+    padding-left: 4rem;
+    background-color: #060a17;
+    padding-bottom: 5rem;
+}
+
+.call p {
+    font-size: 2rem;
+}
+
+/* link */
+
+
+.links {
+    padding-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #060a17;
+    padding-bottom: 4rem;
+}
+
+.info {
+    width: 450px;
+    padding-bottom: 3rem;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
